@@ -1,8 +1,8 @@
 from flask import Flask
-from flask_restful import Api, Resource
+from flask_restful import Resource, Api
 from datetime import datetime
 import random
-#from EmulatorGUI import GPIO
+# from EmulatorGUI import GPIO
 
 app = Flask(__name__)
 api = Api(app)
