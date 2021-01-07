@@ -251,7 +251,7 @@ class Live(Resource):
         #temp = round(random.uniform(20, 30), 1)
         s.trigger()
         time.sleep(0.2)
-        return {'temperature': s.temperature(), 'date': now.strftime('%Y-%m-%d %H:%M:%S')}, 200
+        return {'temperature': s.temperature(), 'date': now.strftime('%Y-%m-%d %H:%M:%S'), 'humidity': s.humidity()}, 200
 
 class History(Resource):
     def get(self):
